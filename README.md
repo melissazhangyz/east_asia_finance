@@ -1,4 +1,4 @@
-# Evidence of financial globalization: how East Asian saving glut affect US interest rate
+# Data analysis of financial globalization: how excess saving in East Asia affect interest rate in US
 
 ## Overview
 
