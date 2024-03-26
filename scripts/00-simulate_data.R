@@ -1,19 +1,25 @@
 #### Preamble ####
-# Purpose: Simulates... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: Simulates national saving rate data
+# Author: Yingzhi zhang
+# Date: 26 March 2024
+# Contact: yingzhi.zhang@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
 
 
 #### Workspace setup ####
 library(tidyverse)
-# [...UPDATE THIS...]
+set.seed(987)
+
 
 #### Simulate data ####
-# [...ADD CODE HERE...]
+country_name <- c("China", "Thiland", "Malaysia")
+
+data <-
+  tibble(
+    country = rep(country_name, times = 21),
+    year = rep(1990:2010, each = 3),
+    saving_rate = runif(n=21*3, min=20, max=60)
+  )
 
 
 
